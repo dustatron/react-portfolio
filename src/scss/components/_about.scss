@@ -1,0 +1,46 @@
+.about {
+  position: relative;
+  font-size: $default-font-size;
+  &-top {
+    margin: -5px 2%;
+    padding-top: 14rem;
+    text-align: center;
+    img {
+      display: inline-block;
+    }
+  }
+  &-bottom {
+    background: $light-blue;
+    padding: 2rem 0 5rem 0;
+
+    &-title {
+      padding-top: 5rem;
+      width: 100%;
+      text-align: center;
+      color: $white;
+      font-weight: bolder;
+      font-size: 2em;
+    }
+    &-bullets {
+      width: 70%;
+      margin: auto;
+      color: $white;
+      font-weight: 300;
+      li {
+        padding: 2rem 0;
+        display: flex;
+      }
+      &-img {
+        width: 40%;
+
+        img {
+          width: 100%;
+        }
+      }
+      &-copy {
+        // display: none;
+        padding-left: 2rem;
+      }
+    }
+  }
+}
