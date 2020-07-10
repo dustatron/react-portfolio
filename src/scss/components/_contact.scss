@@ -1,0 +1,28 @@
+.contact {
+  font-size: $default-font-size;
+  color: $white;
+  width: 100%;
+  height: 34rem;
+  background: $light-blue;
+  position: relative;
+
+  &-title {
+    font-size: $header-size;
+    font-weight: $header-weight;
+    width: 100%;
+    text-align: center;
+    padding: $title-padding;
+  }
+
+  &-paragraph {
+    width: 45%;
+    margin: auto;
+    font-weight: 300;
+    text-align: center;
+  }
+  &-buttons {
+    margin: 7rem auto;
+    width: 50%;
+    text-align: center;
+  }
+}

@@ -11,15 +11,15 @@
   }
   &-bottom {
     background: $light-blue;
-    padding: 2rem 0 5rem 0;
+    padding-bottom: 5rem;
 
     &-title {
-      padding-top: 5rem;
+      padding: $title-padding;
       width: 100%;
       text-align: center;
       color: $white;
       font-weight: bolder;
-      font-size: 2em;
+      font-size: $header-size;
     }
     &-bullets {
       width: 70%;

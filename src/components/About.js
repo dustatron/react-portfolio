@@ -1,6 +1,8 @@
 import React from 'react';
 import techStuff from '../media/icons/tech-stuff-1.svg';
 import videoCamera from '../media/icons/video-camera.png';
+import webpage from '../media/icons/webpage.png';
+import reactCloud from '../media/icons/react-cloud.png';
 
 const About = () => {
   return (
@@ -27,7 +29,7 @@ const About = () => {
             </li>
             <li>
               <div className='about-bottom-bullets-img'>
-                <img src={videoCamera} alt='video camera' />
+                <img src={webpage} alt='video camera' />
               </div>
               <div className='about-bottom-bullets-copy'>
                 I spent over 10 years in video and film production. I started as
@@ -40,7 +42,7 @@ const About = () => {
             </li>
             <li>
               <div className='about-bottom-bullets-img'>
-                <img src={videoCamera} alt='video camera' />
+                <img src={reactCloud} alt='video camera' />
               </div>
               <div className='about-bottom-bullets-copy'>
                 I spent over 10 years in video and film production. I started as
