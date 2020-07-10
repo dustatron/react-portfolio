@@ -1,5 +1,9 @@
 @import './abstracts/mixins';
 @import './abstracts/variables';
 
-@import './base/base';
 @import './base/cssReset';
+@import './base/base';
+
+@import './components/header';
+@import './components/navbar';
+@import './components/project';

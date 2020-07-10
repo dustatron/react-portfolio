@@ -1,0 +1,49 @@
+.navbar {
+  display: flex;
+  flex-direction: column;
+  font-size: $default-font-size;
+  width: 150px;
+  padding: 3rem;
+  text-transform: uppercase;
+  &-logo {
+    margin-bottom: 25px;
+    img {
+      width: 45px;
+      height: auto;
+    }
+  }
+  &-list {
+    li {
+      height: 4rem;
+      padding-left: 10px;
+    }
+    &-item {
+      display: flex;
+      align-items: center;
+      &:link,
+      &:visited {
+        text-decoration: none;
+        color: $black;
+        transition: all 0.2s;
+      }
+
+      &:hover,
+      &:active {
+        // text-shadow: 1px 1px 11px rgba(150, 150, 150, 0.3);
+        transform: scale(1.05);
+        border-bottom: 3px solid $dark-grey;
+        // background: red;
+      }
+      &-img {
+        margin-right: 10px;
+        img {
+          width: 25px;
+        }
+      }
+    }
+  }
+}
+
+.selected {
+  border-bottom: 3px solid $black;
+}
