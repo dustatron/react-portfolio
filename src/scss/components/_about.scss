@@ -1,17 +1,24 @@
 .about {
-  position: relative;
+  // position: relative;
   font-size: $default-font-size;
+  margin-bottom: 18em;
   &-top {
     margin: -5px 2%;
     padding-top: 14rem;
     text-align: center;
     img {
       display: inline-block;
+      width: 55%;
+      @include respond(tab-port) {
+        width: 80%;
+      }
     }
   }
   &-bottom {
     background: $light-blue;
     padding-bottom: 5rem;
+    @include respond(tab-port) {
+    }
 
     &-title {
       padding: $title-padding;

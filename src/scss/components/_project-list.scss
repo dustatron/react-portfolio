@@ -1,6 +1,7 @@
 .project-list {
   font-size: $default-font-size;
   color: $black;
+  margin-bottom: 8em;
   &-title {
     padding: $title-padding;
     text-align: center;
@@ -16,6 +17,7 @@
     justify-content: start;
     margin: auto;
     width: 90%;
+
     &-box {
       cursor: pointer;
       width: 104px;
@@ -43,9 +45,13 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    @include respond(tab-port) {
+      flex-direction: column;
+      margin: 2em 3%;
+    }
   }
 }
 
-.active {
+.active-box {
   background: #525356;
 }

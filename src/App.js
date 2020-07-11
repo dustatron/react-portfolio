@@ -22,7 +22,7 @@ function App() {
             </Route>
           </Switch>
         </div>
-        <div className='grid-container-right'>right</div>
+        <div className='grid-container-right'></div>
       </div>
     </Fragment>
   );

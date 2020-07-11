@@ -30,6 +30,7 @@ body {
 }
 
 .grid-container {
+  position: relative;
   margin: 0 2%;
   display: grid;
   grid-template-columns: 1fr 4fr 1fr;
@@ -37,13 +38,13 @@ body {
   grid-column-gap: 0px;
   grid-row-gap: 0px;
   grid-template-areas: '. . .';
+  @include respond(tab-port) {
+    margin: 0;
+  }
 
-  // align-items: start;
-  // justify-items: center;
-  // height: 100vh;
   &-left {
     justify-self: right;
-    font-weight: 900;
+    // font-weight: 900;
     // width: 100%;
 
     @include respond(tab-port) {
@@ -54,10 +55,10 @@ body {
       background-color: white;
       width: 100%;
       height: 3.5em;
+      margin: 0;
     }
   }
   &-right {
-    font-weight: 600;
     @include respond(tab-port) {
       display: none;
     }

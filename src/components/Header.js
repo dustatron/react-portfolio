@@ -3,7 +3,7 @@ import headerImg from '../media/header-1.png';
 
 const Header = () => {
   return (
-    <div className='header'>
+    <div className='header' id='top'>
       <img src={headerImg} alt='background' />
       <div className='header-title'>
         <p>Hi,</p>

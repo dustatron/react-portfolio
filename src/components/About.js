@@ -7,7 +7,7 @@ import reactCloud from '../media/icons/react-cloud.png';
 const About = () => {
   return (
     <div className='about'>
-      <div className='about-top'>
+      <div className='about-top' id='about'>
         <img src={techStuff} alt='tech-stuff graphic' />
       </div>
       <div className='about-bottom'>
