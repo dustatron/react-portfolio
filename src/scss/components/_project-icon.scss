@@ -17,6 +17,9 @@
     min-width: 70%;
     height: 350px;
     margin: 10px auto;
+    @include respond(tab-port) {
+      height: 220px;
+    }
   }
 
   &-bar {

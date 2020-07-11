@@ -43,6 +43,7 @@ body {
   grid-template-areas: '. . .';
   @include respond(tab-port) {
     margin: 0;
+    max-width: 100%;
   }
 
   &-left {
