@@ -3,8 +3,18 @@ const ProjectData = [
     id: 1,
     title: 'Trail Blazers',
     tech: 'React',
-    img: 'link here',
     img: 'blazers.png',
+    lgImg: '',
+    secImg: '',
+    basicTitle: 'Basic Title',
+    basicDetails:
+      'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry',
+    hurdlesTitle: 'Hurdles',
+    hurdles:
+      'but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.',
+    techList: ['React', 'JavaScript', 'RESTful API', 'Node.js'],
+    activeLink: '',
+    gitHubLink: '',
   },
   {
     id: 2,

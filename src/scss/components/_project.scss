@@ -1,3 +1,118 @@
 .project {
+  width: 100%;
+  height: 934px;
+
   font-size: $default-font-size;
+  &-header {
+    padding: 4rem 20px;
+    height: 28rem;
+    color: $white;
+    text-transform: capitalize;
+    background: $light-blue;
+    &-nav {
+      margin-bottom: 10rem;
+      font-weight: 600;
+      opacity: 1;
+      transition: all 0.2s;
+      a,
+      a:active,
+      a:visited {
+        text-decoration: none;
+        color: $white;
+      }
+
+      &-prev {
+        display: inline;
+      }
+      &-back {
+        float: right;
+      }
+    }
+    &-title {
+      font-size: 2.5em;
+      font-weight: 600;
+      width: 100%;
+      text-align: center;
+      text-transform: capitalize;
+      margin-bottom: 2.5rem;
+    }
+    &-img {
+      // background: #000000;
+      max-width: 500px;
+      height: 388px;
+      margin: auto;
+      text-align: center;
+      border-radius: 0px 0px 12px 12px;
+      box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15);
+      overflow: hidden;
+      img {
+        width: 100%;
+      }
+    }
+  }
+  &-tech {
+    margin: 270px auto 0 auto;
+    max-width: 500px;
+    a,
+    a:active,
+    a:visited {
+      text-decoration: none;
+      color: $black;
+      font-weight: 300;
+      padding-right: 10px;
+      // &:first-of-type {
+      // }
+    }
+
+    &-top {
+      display: none;
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      border-bottom: 1px solid $black;
+      padding-bottom: 5px;
+      &-title {
+        font-weight: 700;
+        padding-left: 8px;
+      }
+    }
+
+    &-bottom {
+      padding: 5px;
+      &-item {
+        font-size: 1.3rem;
+        font-weight: 300;
+        display: inline;
+        padding: 0 5px;
+        &:not(:last-child) {
+          border-right: 1px dashed $black;
+        }
+      }
+    }
+  }
 }
+
+// .Chevron {
+//   position: relative;
+//   display: block;
+//   height: 50px; /*height should be double border*/
+// }
+// .Chevron::before,
+// .Chevron::after {
+//   position: absolute;
+//   display: block;
+//   content: '';
+//   border: 25px solid transparent; /*adjust size*/
+// }
+// /*Change the four instances of 'top' below to rotate (top/right/bottom/left)*/
+// .Chevron::before {
+//   top: 0;
+//   border-top-color: #b00; /*Chevron Color*/
+// }
+// .Chevron::after {
+//   top: -10px; /*adjust thickness*/
+//   border-top-color: #fff; /*Match background colour*/
+// }
+
+/* Blazers-pre-game-page-v02 1 */

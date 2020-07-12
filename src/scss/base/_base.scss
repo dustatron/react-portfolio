@@ -32,7 +32,8 @@ body {
 }
 
 .grid-container {
-  max-width: 1400px;
+  width: 1400px;
+  // min-width: 1300px;
   position: relative;
   margin: 0 2%;
   display: grid;
