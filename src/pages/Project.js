@@ -10,6 +10,12 @@ const Project = ({ match: { params } }) => {
     img: '',
     tech: '',
     techList: '',
+    basicTitle: '',
+    basicDetails: '',
+    hurdlesTitle: '',
+    hurdlesDetails: '',
+    activeLink: '',
+    gitHubLink: '',
   });
   useEffect(() => {
     const data = ProjectData.find((pro) => {
@@ -23,7 +29,17 @@ const Project = ({ match: { params } }) => {
   const nextLinkId = project.id + 1;
   const lastProject = ProjectData.length;
 
-  const { title, img, techList } = project; // Deconstruct
+  const {
+    title,
+    img,
+    techList,
+    basicTitle,
+    basicDetails,
+    hurdlesTitle,
+    hurdlesDetails,
+    activeLink,
+    gitHubLink,
+  } = project; // Deconstruct
 
   return (
     <div className='project'>
@@ -79,6 +95,15 @@ const Project = ({ match: { params } }) => {
                 <div className='project-tech-bottom-item'>{item} </div>
               ))
             : ''}
+        </div>
+      </div>
+      <div className='project-details'>
+        <div className='project-details-left'>An image goes here</div>
+        <div className='project-details-right'>
+          <div className='project-details-right-title'>{basicTitle}</div>
+          <div className='project-details-right-detail'>{basicDetails}</div>
+          <div className='project-details-right-title'>{hurdlesTitle}</div>
+          <div className='project-details-right-detail'>{hurdlesDetails}</div>
         </div>
       </div>
     </div>
