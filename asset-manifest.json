@@ -1,0 +1,37 @@
+{
+  "files": {
+    "main.css": "/react-portfolio/static/css/main.569faeeb.chunk.css",
+    "main.js": "/react-portfolio/static/js/main.b4e80aeb.chunk.js",
+    "main.js.map": "/react-portfolio/static/js/main.b4e80aeb.chunk.js.map",
+    "runtime-main.js": "/react-portfolio/static/js/runtime-main.94090f38.js",
+    "runtime-main.js.map": "/react-portfolio/static/js/runtime-main.94090f38.js.map",
+    "static/js/2.bd80896f.chunk.js": "/react-portfolio/static/js/2.bd80896f.chunk.js",
+    "static/js/2.bd80896f.chunk.js.map": "/react-portfolio/static/js/2.bd80896f.chunk.js.map",
+    "index.html": "/react-portfolio/index.html",
+    "precache-manifest.ff729b366f565e4c0ea48b9a0785ae34.js": "/react-portfolio/precache-manifest.ff729b366f565e4c0ea48b9a0785ae34.js",
+    "service-worker.js": "/react-portfolio/service-worker.js",
+    "static/css/main.569faeeb.chunk.css.map": "/react-portfolio/static/css/main.569faeeb.chunk.css.map",
+    "static/js/2.bd80896f.chunk.js.LICENSE.txt": "/react-portfolio/static/js/2.bd80896f.chunk.js.LICENSE.txt",
+    "static/media/blazers-02.png": "/react-portfolio/static/media/blazers-02.06e1c564.png",
+    "static/media/blazers.png": "/react-portfolio/static/media/blazers.315b0710.png",
+    "static/media/dev-connect.png": "/react-portfolio/static/media/dev-connect.a3cffe0b.png",
+    "static/media/github-simple.svg": "/react-portfolio/static/media/github-simple.62feb394.svg",
+    "static/media/header-1.png": "/react-portfolio/static/media/header-1.d1b2ae9b.png",
+    "static/media/karaoke.png": "/react-portfolio/static/media/karaoke.6799992f.png",
+    "static/media/linkedin.svg": "/react-portfolio/static/media/linkedin.4d88a7c3.svg",
+    "static/media/mailbox.svg": "/react-portfolio/static/media/mailbox.a930f74f.svg",
+    "static/media/next-arrow.svg": "/react-portfolio/static/media/next-arrow.82c2cc97.svg",
+    "static/media/pfv.png": "/react-portfolio/static/media/pfv.1629a516.png",
+    "static/media/prev-arrow.svg": "/react-portfolio/static/media/prev-arrow.e65b194b.svg",
+    "static/media/tech-stuff-1.svg": "/react-portfolio/static/media/tech-stuff-1.6a90580c.svg",
+    "static/media/ts.png": "/react-portfolio/static/media/ts.7d2f0243.png",
+    "static/media/twitter.svg": "/react-portfolio/static/media/twitter.6ac7c095.svg",
+    "static/media/ve.png": "/react-portfolio/static/media/ve.020bfc81.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.94090f38.js",
+    "static/js/2.bd80896f.chunk.js",
+    "static/css/main.569faeeb.chunk.css",
+    "static/js/main.b4e80aeb.chunk.js"
+  ]
+}
