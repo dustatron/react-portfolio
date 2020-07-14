@@ -1,7 +1,7 @@
 .about {
   // position: relative;
   font-size: $default-font-size;
-  margin-bottom: 18em;
+  margin-bottom: 10em;
   @include respond(tab-port) {
     margin-bottom: 8em;
   }
