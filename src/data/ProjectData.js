@@ -12,7 +12,7 @@ const ProjectData = [
     hurdlesTitle: 'Hurdles',
     hurdlesDetails:
       'but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.',
-    techList: ['React', 'JavaScript', 'RESTful API', 'Node.js'],
+    techList: ['React', 'JavaScript', 'RESTful API', 'Node.js', 'Sass'],
     activeLink: '',
     gitHubLink: '',
   },
@@ -29,7 +29,14 @@ const ProjectData = [
     hurdlesTitle: 'Hurdles',
     hurdlesDetails:
       'but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.',
-    techList: ['React', 'JavaScript', 'RESTful API', 'Node.js'],
+    techList: [
+      'React',
+      'JavaScript',
+      'RESTful API',
+      'Node.js',
+      'Firebase',
+      'Front-End',
+    ],
     activeLink: '',
     gitHubLink: '',
   },
@@ -46,7 +53,7 @@ const ProjectData = [
     hurdlesTitle: 'Hurdles',
     hurdlesDetails:
       'but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.',
-    techList: ['React', 'JavaScript', 'RESTful API', 'Node.js'],
+    techList: ['Rails', 'JavaScript', 'front-end', 'back-end', 'Sass'],
     activeLink: '',
     gitHubLink: '',
   },
@@ -81,7 +88,15 @@ const ProjectData = [
     hurdlesTitle: 'Hurdles',
     hurdlesDetails:
       'but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.',
-    techList: ['C#', 'ASP.NET', 'Identity', 'Docker', 'PostgreSQL'],
+    techList: [
+      'C#',
+      'ASP.NET',
+      'Identity',
+      'Docker',
+      'PostgreSQL',
+      'front-end',
+      'back-end',
+    ],
     activeLink: '',
     gitHubLink: '',
   },
@@ -98,7 +113,41 @@ const ProjectData = [
     hurdlesTitle: 'Hurdles',
     hurdlesDetails:
       'but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.',
-    techList: ['React', 'Express.js', 'mongoDB', 'JWT Auth'],
+    techList: [
+      'React',
+      'Express.js',
+      'mongoDB',
+      'JWT Auth',
+      'Docker',
+      'front-end',
+      'back-end',
+    ],
+    activeLink: '',
+    gitHubLink: '',
+  },
+  {
+    id: 7,
+    title: 'C# Test',
+    tech: 'C#',
+    img: 'dev-connect.png',
+    lgImg: '',
+    secImg: 'blazers-02.png',
+    basicTitle: 'Dev Connect',
+    basicDetails:
+      'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry',
+    hurdlesTitle: 'Hurdles',
+    hurdlesDetails:
+      'but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.',
+    techList: [
+      'C#',
+      'ASP.NET',
+      'Express.js',
+
+      'JWT Auth',
+      'Docker',
+      'front-end',
+      'back-end',
+    ],
     activeLink: '',
     gitHubLink: '',
   },

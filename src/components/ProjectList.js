@@ -8,10 +8,25 @@ import TechListData from '../data/TechListData';
 import ProjectData from '../data/ProjectData';
 
 const ProjectList = () => {
+  const initialState = ProjectData.slice(0, 6);
   const [selected, setSelected] = useState(0);
-  const updateSelected = (e) => {
-    setSelected(e);
+  const [projectList, setProjectList] = useState(initialState);
+
+  const updateSelected = (index, value) => {
+    const newList = ProjectData.filter((project) => {
+      const lowerCase = project.techList.map((tech) =>
+        tech.toLocaleLowerCase()
+      );
+      return lowerCase.includes(value.toLowerCase());
+    });
+    if (value === 'show all') {
+      setProjectList(initialState);
+    } else {
+      setProjectList(newList);
+    }
+    setSelected(index);
   };
+
   return (
     <div className='project-list' id='projects'>
       <div className='project-list-title'>My Recent Projects</div>
@@ -23,20 +38,16 @@ const ProjectList = () => {
               selected === index ? 'active-box' : ''
             }`}
             onClick={() => {
-              updateSelected(index);
+              updateSelected(index, tech);
             }}>
             {tech}
           </div>
         ))}
       </div>
       <div className='project-list-icons'>
-        {ProjectData.map((proj) => (
+        {projectList.map((proj) => (
           <Link key={v4()} to={`/proj/${proj.id}`}>
-            <ProjectIcon
-              project={proj}
-              selected={selected}
-              handleClick={updateSelected}
-            />
+            <ProjectIcon project={proj} selected={selected} />
           </Link>
         ))}
       </div>

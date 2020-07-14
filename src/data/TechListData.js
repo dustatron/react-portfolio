@@ -1,18 +1,19 @@
 const TechListData = [
   'show all',
-  'react',
-  'front-end',
-  'back-end',
-  'sass',
+  'React',
+  'Front-End',
+  'Back-End',
+  'Sass',
   'node',
-  'C# ASP.NET',
+  'C#',
+  'ASP.NET',
   'Rails',
   'firebase',
   'mongoDB',
-  'html',
-  'javascript',
+  'JavaScript',
   'mysql',
-  'postgres',
+  'Postgre',
+  'Docker',
 ];
 
 export default TechListData;
