@@ -1,8 +1,6 @@
 const TechListData = [
   'show all',
   'React',
-  'Front-End',
-  'Back-End',
   'Sass',
   'node',
   'C#',
