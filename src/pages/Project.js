@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import ProjectData from '../data/ProjectData';
-// import screenShot from '../media/screenshots/ts.png';
+import { v4 } from 'uuid';
 
 const Project = ({ match: { params } }) => {
   const [project, setProject] = useState({
@@ -19,7 +19,6 @@ const Project = ({ match: { params } }) => {
   });
   useEffect(() => {
     const data = ProjectData.find((pro) => {
-      console.log('id', params.id);
       return pro.id === parseInt(params.id);
     });
     setProject(data ? data : project);
@@ -27,7 +26,7 @@ const Project = ({ match: { params } }) => {
 
   const prevLinkId = project.id - 1;
   const nextLinkId = project.id + 1;
-  const lastProject = ProjectData.length;
+  const lastProject = ProjectData.length + 1;
 
   const {
     title,
@@ -39,6 +38,7 @@ const Project = ({ match: { params } }) => {
     hurdlesDetails,
     activeLink,
     gitHubLink,
+    secImg,
   } = project; // Deconstruct
 
   return (
@@ -92,21 +92,30 @@ const Project = ({ match: { params } }) => {
       <div className='project-tech'>
         <div className='project-tech-top'>
           <div className='project-tech-top-title'>Technologies</div>
-          <div className='project-tech-top-Links'>
-            <a href='/'>Active Page</a>
-            <a href='/'>GitHub</a>
+          <div className='project-tech-top-links'>
+            <a href={activeLink}>Active Page</a>
+            <a href={gitHubLink}>GitHub</a>
           </div>
         </div>
         <div className='project-tech-bottom'>
           {techList
             ? techList.map((item) => (
-                <div className='project-tech-bottom-item'>{item} </div>
+                <div key={v4()} className='project-tech-bottom-item'>
+                  {item}{' '}
+                </div>
               ))
             : ''}
         </div>
       </div>
       <div className='project-details'>
-        <div className='project-details-left'>An image goes here</div>
+        <div className='project-details-left'>
+          {img && (
+            <img
+              src={require(`../media/screenshots/${secImg}`)}
+              alt='screen shot'
+            />
+          )}
+        </div>
         <div className='project-details-right'>
           <div className='project-details-right-title'>{basicTitle}</div>
           <div className='project-details-right-detail'>{basicDetails}</div>
