@@ -35,7 +35,7 @@ const Project = ({ match: { params } }) => {
       return pro.id === parseInt(params.id);
     });
     setProject(data ? data : project);
-  }, [params]);
+  }, [params, project]);
 
   const transition = useTransition(project, (project) => project.id, direction); // returns array, (item, item key, styling)
 

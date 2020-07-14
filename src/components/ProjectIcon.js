@@ -15,7 +15,6 @@ const ProjectIcon = ({ project }) => {
     xys: [0, 0, 1],
     config: { mass: 8, tension: 550, friction: 60 },
   }));
-  const imgString = '../media/screenshots/ts.png';
   return (
     <animated.div
       className={`project-icon`}
