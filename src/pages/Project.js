@@ -45,21 +45,29 @@ const Project = ({ match: { params } }) => {
     <div className='project'>
       <div className='project-header'>
         <div className='project-header-nav'>
-          {prevLinkId !== 0 && (
+          {prevLinkId !== 0 ? (
             <Link to={`/proj/${prevLinkId}`}>
               <div className='project-header-nav-prev'>
-                <div className='chevron'></div>
+                <div className='chevron'>
+                  <img src={require('../media/icons/prev-arrow.svg')} alt='' />
+                </div>
                 Previous
               </div>
             </Link>
+          ) : (
+            'First Project'
           )}
-          {nextLinkId !== lastProject && (
+          {nextLinkId !== lastProject ? (
             <Link to={`/proj/${nextLinkId}`}>
               <div className='project-header-nav-back'>
-                <div className='chevron'></div>
                 Next
+                <div className='chevron'>
+                  <img src={require('../media/icons/next-arrow.svg')} alt='' />
+                </div>
               </div>
             </Link>
+          ) : (
+            ' Last Project'
           )}
         </div>
         <div className='project-header-title'>{title}</div>

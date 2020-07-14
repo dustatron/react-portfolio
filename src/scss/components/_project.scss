@@ -10,6 +10,8 @@
     text-transform: capitalize;
     background: $light-blue;
     &-nav {
+      display: flex;
+      justify-content: space-between;
       margin-bottom: 10rem;
       font-weight: 600;
       opacity: 1;
@@ -22,10 +24,13 @@
       }
 
       &-prev {
-        display: inline;
+        display: flex;
+        align-items: center;
       }
       &-back {
         float: right;
+        display: flex;
+        align-items: center;
       }
     }
     &-title {

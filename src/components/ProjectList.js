@@ -31,7 +31,7 @@ const ProjectList = () => {
       </div>
       <div className='project-list-icons'>
         {ProjectData.map((proj) => (
-          <Link to={`/proj/${proj.id}`}>
+          <Link key={v4()} to={`/proj/${proj.id}`}>
             <ProjectIcon
               project={proj}
               selected={selected}
