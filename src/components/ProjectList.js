@@ -2,8 +2,8 @@ import React, { useState } from 'react';
 import { v4 } from 'uuid';
 import { Link } from 'react-router-dom';
 
+// Components
 import ProjectIcon from './ProjectIcon';
-
 import TechListData from '../data/TechListData';
 import ProjectData from '../data/ProjectData';
 

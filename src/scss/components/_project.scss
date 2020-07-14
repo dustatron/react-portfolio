@@ -1,6 +1,10 @@
 .project {
+  // position: absolute;
   width: 100%;
   min-height: 100vh;
+  @include respond(tab-land) {
+    position: relative;
+  }
 
   font-size: $default-font-size;
   &-header {
