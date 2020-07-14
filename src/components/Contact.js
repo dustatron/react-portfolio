@@ -13,9 +13,12 @@ const Contact = () => {
             dustymccord@gmail.com{' '}
           </span>
         </a>
-        and view
-        <a href=''>
-          <span className='contact-paragraph-name'> my Resume here.</span>
+        and view my
+        <a
+          href='https://docs.google.com/document/d/1fIFS3Dhcqr3sVAJxUaqoQ-Ws92Yl9xRoHjzTJI_rTGE/edit?usp=sharing'
+          target='_blank'
+          rel='noopener noreferrer'>
+          <span className='contact-paragraph-name'> Resume here.</span>
         </a>
       </div>
       <div className='contact-buttons'>

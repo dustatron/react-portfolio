@@ -67,22 +67,7 @@ const NavBar = () => {
             <div className='navbar-list-item-copy'>Projects</div>
           </NavLink>
         </li>
-        {/* <li>
-          <NavLink
-            smooth
-            activeClassName={
-              `${location.pathname}${location.hash}` === '/home#projects'
-                ? 'selected'
-                : ''
-            }
-            className='navbar-list-item'
-            to={'/home#projects'}>
-            <div className='navbar-list-item-img'>
-              <img src={projects} alt='Projects' />
-            </div>
-            <div className='navbar-list-item-copy'>Projects</div>
-          </NavLink>
-        </li> */}
+
         <li>
           <NavLink
             smooth
@@ -100,16 +85,16 @@ const NavBar = () => {
           </NavLink>
         </li>
         <li>
-          <NavLink
-            smooth
-            activeClassName='selected'
+          <a
             className='navbar-list-item'
-            to={'/proj/4'}>
+            href='https://docs.google.com/document/d/1fIFS3Dhcqr3sVAJxUaqoQ-Ws92Yl9xRoHjzTJI_rTGE/edit?usp=sharing'
+            target='_blank'
+            rel='noopener noreferrer'>
             <div className='navbar-list-item-img'>
               <img src={clipboard} alt='resume' />
             </div>
             <div className='navbar-list-item-copy'>Resume</div>
-          </NavLink>
+          </a>
         </li>
       </ul>
     </div>

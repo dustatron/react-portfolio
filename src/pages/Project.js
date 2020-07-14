@@ -2,8 +2,21 @@ import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import ProjectData from '../data/ProjectData';
 import { v4 } from 'uuid';
+import { useTransition, animated } from 'react-spring';
 
 const Project = ({ match: { params } }) => {
+  const slideRight = {
+    from: { opacity: 0, marginLeft: -200, marginRight: 200 },
+    enter: { opacity: 1, marginLeft: 0, marginRight: 0 },
+    leave: { opacity: 0, marginLeft: 200, marginRight: -200 },
+  };
+  const slideLeft = {
+    from: { opacity: 0, marginLeft: 200, marginRight: -200 },
+    enter: { opacity: 1, marginLeft: 0, marginRight: 0 },
+    leave: { opacity: 0, marginLeft: -200, marginRight: 200 },
+  };
+
+  const [direction, setDirection] = useState(slideRight);
   const [project, setProject] = useState({
     id: '',
     title: '',
@@ -23,6 +36,8 @@ const Project = ({ match: { params } }) => {
     });
     setProject(data ? data : project);
   }, [params]);
+
+  const transition = useTransition(project, (project) => project.id, direction); // returns array, (item, item key, styling)
 
   const prevLinkId = project.id - 1;
   const nextLinkId = project.id + 1;
@@ -46,7 +61,11 @@ const Project = ({ match: { params } }) => {
       <div className='project-header'>
         <div className='project-header-nav'>
           {prevLinkId !== 0 ? (
-            <Link to={`/proj/${prevLinkId}`}>
+            <Link
+              to={`/proj/${prevLinkId}`}
+              onClick={() => {
+                setDirection(slideLeft);
+              }}>
               <div className='project-header-nav-prev'>
                 <div className='chevron'>
                   <img src={require('../media/icons/prev-arrow.svg')} alt='' />
@@ -58,7 +77,11 @@ const Project = ({ match: { params } }) => {
             'First Project'
           )}
           {nextLinkId !== lastProject ? (
-            <Link to={`/proj/${nextLinkId}`}>
+            <Link
+              to={`/proj/${nextLinkId}`}
+              onClick={() => {
+                setDirection(slideRight);
+              }}>
               <div className='project-header-nav-back'>
                 Next
                 <div className='chevron'>
@@ -70,25 +93,34 @@ const Project = ({ match: { params } }) => {
             ' Last Project'
           )}
         </div>
+
         <div className='project-header-title'>{title}</div>
         <div className='project-header-img'>
-          <div className='project-icon-bar'>
-            <ul>
-              <li className='project-icon-bar-circle red'></li>
-              <li className='project-icon-bar-circle orange'></li>
-              <li className='project-icon-bar-circle green'></li>
-            </ul>
-            <div className='project-icon-bar-title'>{project.title}</div>
-            <div></div>
-          </div>
-          {img && (
-            <img
-              src={require(`../media/screenshots/${img}`)}
-              alt='screen shot'
-            />
-          )}
+          {transition.map(({ item, key, props }) => (
+            <animated.div
+              className='project-header-img-body'
+              key={key}
+              style={props}>
+              <div className='project-icon-bar'>
+                <ul>
+                  <li className='project-icon-bar-circle red'></li>
+                  <li className='project-icon-bar-circle orange'></li>
+                  <li className='project-icon-bar-circle green'></li>
+                </ul>
+                <div className='project-icon-bar-title'>{project.title}</div>
+                <div></div>
+              </div>
+              {img && (
+                <img
+                  src={require(`../media/screenshots/${img}`)}
+                  alt='screen shot'
+                />
+              )}
+            </animated.div>
+          ))}
         </div>
       </div>
+
       <div className='project-tech'>
         <div className='project-tech-top'>
           <div className='project-tech-top-title'>Technologies</div>
