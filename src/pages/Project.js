@@ -4,6 +4,9 @@ import ProjectData from '../data/ProjectData';
 import { v4 } from 'uuid';
 import { useTransition, animated } from 'react-spring';
 
+import prevArrow from '../media/icons/prev-arrow.svg';
+import nextArrow from '../media/icons/next-arrow.svg';
+
 const Project = ({ match: { params } }) => {
   const slideRight = {
     from: { opacity: 0, marginLeft: -200, marginRight: 200 },
@@ -68,7 +71,7 @@ const Project = ({ match: { params } }) => {
               }}>
               <div className='project-header-nav-prev'>
                 <div className='chevron'>
-                  <img src={require('../media/icons/prev-arrow.svg')} alt='' />
+                  <img src={prevArrow} alt='' />
                 </div>
                 Previous
               </div>
@@ -85,7 +88,7 @@ const Project = ({ match: { params } }) => {
               <div className='project-header-nav-back'>
                 Next
                 <div className='chevron'>
-                  <img src={require('../media/icons/next-arrow.svg')} alt='' />
+                  <img src={nextArrow} alt='' />
                 </div>
               </div>
             </Link>
@@ -133,7 +136,7 @@ const Project = ({ match: { params } }) => {
           {techList
             ? techList.map((item) => (
                 <div key={v4()} className='project-tech-bottom-item'>
-                  {item}{' '}
+                  {item}
                 </div>
               ))
             : ''}
