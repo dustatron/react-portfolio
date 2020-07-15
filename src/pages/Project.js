@@ -56,7 +56,7 @@ const Project = ({ match: { params } }) => {
     hurdlesDetails,
     activeLink,
     gitHubLink,
-    secImg,
+    // secImg,
   } = project; // Deconstruct
 
   return (
