@@ -9,8 +9,11 @@ import projects from '../media/icons/projects.png';
 import mail from '../media/icons/mail.png';
 import clipboard from '../media/icons/clipboard.png';
 
-const NavBar = () => {
+const NavBar = ({ updateView }) => {
   const location = useLocation();
+  const handleClick = (value) => {
+    updateView(value);
+  };
   return (
     <div className='navbar'>
       <div className='navbar-logo'>
@@ -19,6 +22,9 @@ const NavBar = () => {
       <ul className='navbar-list'>
         <li>
           <NavLink
+            onClick={() => {
+              handleClick(1);
+            }}
             smooth
             activeClassName={
               `${location.pathname}${location.hash}` === '#top' ||
@@ -37,6 +43,9 @@ const NavBar = () => {
         </li>
         <li>
           <NavLink
+            onClick={() => {
+              handleClick(1);
+            }}
             smooth
             activeClassName={
               `${location.pathname}${location.hash}` === '#about'
@@ -53,6 +62,9 @@ const NavBar = () => {
         </li>
         <li>
           <NavLink
+            onClick={() => {
+              handleClick(1);
+            }}
             smooth
             activeClassName={
               `${location.pathname}${location.hash}` === '#projects'
@@ -70,6 +82,9 @@ const NavBar = () => {
 
         <li>
           <NavLink
+            onClick={() => {
+              handleClick(1);
+            }}
             smooth
             activeClassName={
               `${location.pathname}${location.hash}` === '#contact'

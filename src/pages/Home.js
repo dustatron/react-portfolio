@@ -4,12 +4,12 @@ import About from '../components/About';
 import ProjectList from '../components/ProjectList';
 import Contact from '../components/Contact';
 
-const Home = () => {
+const Home = ({ updateView }) => {
   return (
     <>
       <Header />
       <About />
-      <ProjectList />
+      <ProjectList handleViewChange={updateView} />
       <Contact />
     </>
   );

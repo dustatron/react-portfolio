@@ -7,7 +7,7 @@ import { useTransition, animated } from 'react-spring';
 import prevArrow from '../media/icons/arrowleft.svg';
 import nextArrow from '../media/icons/arrowright.svg';
 
-const Project = ({}) => {
+const Project = ({ updateView, currentProj }) => {
   const slideRight = {
     from: { opacity: 0, marginLeft: -200, marginRight: 200 },
     enter: { opacity: 1, marginLeft: 0, marginRight: 0 },
@@ -35,10 +35,10 @@ const Project = ({}) => {
   });
   useEffect(() => {
     const data = ProjectData.find((pro) => {
-      return pro.id === parseInt(1);
+      return pro.id === currentProj;
     });
     setProject(data ? data : project);
-  }, [project]);
+  }, [currentProj, project]);
 
   const transition = useTransition(project, (project) => project.id, direction); // returns array, (item, item key, styling)
 
@@ -65,9 +65,10 @@ const Project = ({}) => {
         <div className='project-header-nav'>
           {prevLinkId !== 0 ? (
             <Link
-              to={`/proj/${prevLinkId}`}
+              // to={`/proj/${prevLinkId}`}
               onClick={() => {
                 setDirection(slideLeft);
+                updateView(2, prevLinkId);
               }}>
               <div className='project-header-nav-prev'>
                 <div className='chevron'>
@@ -81,9 +82,10 @@ const Project = ({}) => {
           )}
           {nextLinkId !== lastProject ? (
             <Link
-              to={`/proj/${nextLinkId}`}
+              // to={`/proj/${nextLinkId}`}
               onClick={() => {
                 setDirection(slideRight);
+                updateView(2, nextLinkId);
               }}>
               <div className='project-header-nav-back'>
                 Next

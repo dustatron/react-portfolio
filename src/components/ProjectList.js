@@ -7,7 +7,7 @@ import ProjectIcon from './ProjectIcon';
 import TechListData from '../data/TechListData';
 import ProjectData from '../data/ProjectData';
 
-const ProjectList = () => {
+const ProjectList = ({ handleViewChange }) => {
   const initialState = ProjectData.slice(0, 6);
   const [selected, setSelected] = useState(0);
   const [projectList, setProjectList] = useState(initialState);
@@ -46,7 +46,12 @@ const ProjectList = () => {
       </div>
       <div className='project-list-icons'>
         {projectList.map((proj) => (
-          <Link key={v4()} to={`/proj/${proj.id}`}>
+          <Link
+            key={v4()}
+            to={`/proj/${proj.id}`}
+            onClick={() => {
+              handleViewChange(2, proj.id);
+            }}>
             <ProjectIcon project={proj} selected={selected} />
           </Link>
         ))}
