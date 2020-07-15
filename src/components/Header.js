@@ -1,5 +1,5 @@
 import React from 'react';
-import headerImg from '../media/header-1.png';
+import headerImg from '../media/header.png';
 
 const Header = () => {
   return (

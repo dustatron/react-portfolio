@@ -1,5 +1,5 @@
 import React, { Fragment } from 'react';
-import { Switch, Route, Redirect } from 'react-router-dom';
+import { Switch, Route } from 'react-router-dom';
 
 // Components
 import Home from './pages/Home';
@@ -17,9 +17,7 @@ function App() {
           <Switch>
             <Route path='/proj/:id' component={Project} />
             <Route exact path='/home' component={Home} />
-            <Route path='/'>
-              <Redirect to={'/home'} />
-            </Route>
+            <Route path='/' component={Home} />
           </Switch>
         </div>
         <div className='grid-container-right'></div>

@@ -1,5 +1,5 @@
 import React from 'react';
-import techStuff from '../media/icons/tech-stuff-1.svg';
+import techStuff from '../media/icons/tech-stuff.png';
 import videoCamera from '../media/icons/video-camera.png';
 import webpage from '../media/icons/webpage.png';
 import reactCloud from '../media/icons/react-cloud.png';
