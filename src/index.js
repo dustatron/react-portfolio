@@ -6,7 +6,8 @@ import { BrowserRouter } from 'react-router-dom';
 // import * as serviceWorker from './serviceWorker';
 
 ReactDOM.render(
-  <BrowserRouter basename={'/dm-portfolio'}>
+  // <BrowserRouter basename={'/dm-portfolio'}>
+  <BrowserRouter>
     <App />
   </BrowserRouter>,
   document.getElementById('root')
