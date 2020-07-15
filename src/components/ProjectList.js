@@ -48,7 +48,7 @@ const ProjectList = ({ handleViewChange }) => {
         {projectList.map((proj) => (
           <Link
             key={v4()}
-            to={`/proj/${proj.id}`}
+            // to={`/proj/${proj.id}`}
             onClick={() => {
               handleViewChange(2, proj.id);
             }}>
