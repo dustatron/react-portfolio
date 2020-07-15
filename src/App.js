@@ -17,7 +17,7 @@ function App() {
           <Switch>
             <Route exact path={`/proj/:id`} component={Project} />
             <Route exact path={`/home`} component={Home} />
-            <Route exact path='/' component={Home} />
+            <Route path='/' component={Home} />
           </Switch>
         </div>
         <div className='grid-container-right'></div>
