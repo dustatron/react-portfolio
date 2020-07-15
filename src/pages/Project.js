@@ -71,7 +71,7 @@ const Project = ({ match: { params } }) => {
               }}>
               <div className='project-header-nav-prev'>
                 <div className='chevron'>
-                  <img src={prevArrow} alt='' />
+                  <img src={`${prevArrow}`} alt='' />
                 </div>
                 Previous
               </div>
@@ -88,7 +88,7 @@ const Project = ({ match: { params } }) => {
               <div className='project-header-nav-back'>
                 Next
                 <div className='chevron'>
-                  <img src={nextArrow} alt='' />
+                  <img src={`${nextArrow}`} alt='' />
                 </div>
               </div>
             </Link>
@@ -146,7 +146,7 @@ const Project = ({ match: { params } }) => {
         <div className='project-details-left'>
           {img && (
             <img
-              src={require(`../media/screenshots/${secImg}`)}
+              src={require(`../media/screenshots/blazers-02.png`)}
               alt='screen shot'
             />
           )}
