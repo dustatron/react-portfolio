@@ -116,10 +116,16 @@ const Project = ({ updateView, currentProj }) => {
                 <div></div>
               </div>
               {img && (
-                <img
-                  src={require(`../media/screenshots/${img}`)}
-                  alt='screen shot'
-                />
+                <a
+                  href={activeLink}
+                  target='_blank'
+                  without
+                  rel='noopener noreferrer'>
+                  <img
+                    src={require(`../media/screenshots/${img}`)}
+                    alt='screen shot'
+                  />
+                </a>
               )}
             </animated.div>
           ))}
@@ -130,8 +136,20 @@ const Project = ({ updateView, currentProj }) => {
         <div className='project-tech-top'>
           <div className='project-tech-top-title'>Technologies</div>
           <div className='project-tech-top-links'>
-            <a href={activeLink}>Active Page</a>
-            <a href={gitHubLink}>GitHub</a>
+            <a
+              href={activeLink}
+              target='_blank'
+              without
+              rel='noopener noreferrer'>
+              Active Page
+            </a>
+            <a
+              href={gitHubLink}
+              target='_blank'
+              without
+              rel='noopener noreferrer'>
+              GitHub
+            </a>
           </div>
         </div>
         <div className='project-tech-bottom'>

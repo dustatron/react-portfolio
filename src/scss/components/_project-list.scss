@@ -21,6 +21,8 @@
     width: 90%;
     justify-content: center;
     @include respond(tab-port) {
+      font-size: 1.5rem;
+      width: 100%;
     }
 
     &-box {
@@ -48,16 +50,19 @@
       }
       @include respond(tab-port) {
         width: 80px;
+        margin: 0 8px 8px 0px;
       }
     }
   }
   &-icons {
     width: 90%;
+    min-height: 700px;
     margin: 2em auto;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     @include respond(tab-port) {
+      min-height: 300px;
       flex-direction: column;
       margin: 2em 3%;
     }

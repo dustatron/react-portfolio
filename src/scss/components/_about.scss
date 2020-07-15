@@ -40,9 +40,17 @@
       li {
         padding: 2rem 0;
         display: flex;
+        @include respond(tab-port) {
+          flex-direction: column;
+          padding: 2rem 0;
+        }
       }
       &-img {
         width: 40%;
+        @include respond(tab-port) {
+          width: 50px;
+          margin: auto;
+        }
 
         img {
           width: 100%;
@@ -51,6 +59,9 @@
       &-copy {
         // display: none;
         padding-left: 2rem;
+        @include respond(tab-port) {
+          padding: 0 2rem;
+        }
       }
     }
   }

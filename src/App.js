@@ -19,8 +19,12 @@ function App() {
   return (
     <Fragment>
       <div className='grid-container'>
-        <div className='grid-container-left'>
+        <span className='mobile-show'>
+          {/* ///// For Mobile only \\\\\ */}
           <NavBar updateView={handleView} />
+        </span>
+        <div className='grid-container-left'>
+          <NavBar updateView={handleView} className='desktop-show' />
         </div>
         <div className='grid-container-center'>
           {view === 1 && <Home updateView={handleView} />}

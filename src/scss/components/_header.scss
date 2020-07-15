@@ -1,13 +1,21 @@
 .header {
+  background: $light-blue;
   box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.07);
   position: relative;
   width: 100%;
   overflow: hidden;
-  @include respond(tab-port) {
+
+  @include respond(tab-land) {
+    height: 300px;
+  }
+  // @include respond(tab-port) {
+  //   height: 200px;
+  // }
+  @include respond(phone) {
     height: 200px;
   }
   img {
-    width: 100%;
+    width: 101%;
     @include respond(tab-port) {
       width: 150%;
     }

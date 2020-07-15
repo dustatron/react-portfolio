@@ -24,9 +24,9 @@ body {
     font-size: 50%; //1 rem = 8px, 8/16 = 50%
   }
 
-  @include respond(big-desktop) {
-    // font-size: 75%; //1rem = 12, 12/16
-  }
+  // @include respond(big-desktop) {
+  //   // font-size: 75%; //1rem = 12, 12/16
+  // }
   font-family: 'Roboto', sans-serif;
   font-weight: 400;
 }
@@ -82,5 +82,18 @@ body {
     display: flex;
     flex-direction: column;
     width: 100%;
+  }
+}
+
+.mobile-show {
+  display: none;
+  @include respond(tab-port) {
+    display: inline;
+  }
+}
+
+.desktop-show {
+  @include respond(tab-port) {
+    display: none;
   }
 }
