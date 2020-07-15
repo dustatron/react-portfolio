@@ -4,8 +4,8 @@ import ProjectData from '../data/ProjectData';
 import { v4 } from 'uuid';
 import { useTransition, animated } from 'react-spring';
 
-import prevArrow from '../media/icons/prev-arrow.svg';
-import nextArrow from '../media/icons/next-arrow.svg';
+import prevArrow from '../media/icons/arrowleft.svg';
+import nextArrow from '../media/icons/arrowright.svg';
 
 const Project = ({ match: { params } }) => {
   const slideRight = {
@@ -146,7 +146,7 @@ const Project = ({ match: { params } }) => {
         <div className='project-details-left'>
           {img && (
             <img
-              src={require(`../media/screenshots/blazers-02.png`)}
+              src={require(`../media/screenshots/blazers02.png`)}
               alt='screen shot'
             />
           )}
