@@ -14,7 +14,7 @@ const Contact = () => {
           </span>
         </a>
         and view
-        <a href=''>
+        <a href='https://docs.google.com/document/d/1fIFS3Dhcqr3sVAJxUaqoQ-Ws92Yl9xRoHjzTJI_rTGE/edit'>
           <span className='contact-paragraph-name'> my Resume here.</span>
         </a>
       </div>
