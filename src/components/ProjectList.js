@@ -11,6 +11,7 @@ const ProjectList = ({ handleViewChange }) => {
   const initialState = ProjectData.slice(0, 6);
   const [selected, setSelected] = useState(0);
   const [projectList, setProjectList] = useState(initialState);
+  const [showMore, setShowMore] = useState(false);
 
   const updateSelected = (index, value) => {
     const newList = ProjectData.filter((project) => {
@@ -19,12 +20,13 @@ const ProjectList = ({ handleViewChange }) => {
       );
       return lowerCase.includes(value.toLowerCase());
     });
+
     if (value === 'show all') {
-      setProjectList(initialState);
+      return setProjectList(initialState);
     } else {
       setProjectList(newList);
     }
-    setSelected(index);
+    return setSelected(index);
   };
 
   return (
