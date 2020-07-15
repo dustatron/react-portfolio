@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { v4 } from 'uuid';
-import { Link, useRouteMatch } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 // Components
 import ProjectIcon from './ProjectIcon';
@@ -8,7 +8,6 @@ import TechListData from '../data/TechListData';
 import ProjectData from '../data/ProjectData';
 
 const ProjectList = () => {
-  const match = useRouteMatch();
   const initialState = ProjectData.slice(0, 6);
   const [selected, setSelected] = useState(0);
   const [projectList, setProjectList] = useState(initialState);
@@ -47,7 +46,7 @@ const ProjectList = () => {
       </div>
       <div className='project-list-icons'>
         {projectList.map((proj) => (
-          <Link key={v4()} to={`/dm-portfolio/proj/${proj.id}`}>
+          <Link key={v4()} to={`/proj/${proj.id}`}>
             <ProjectIcon project={proj} selected={selected} />
           </Link>
         ))}

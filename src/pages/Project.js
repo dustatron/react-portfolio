@@ -65,7 +65,7 @@ const Project = ({ match: { params } }) => {
         <div className='project-header-nav'>
           {prevLinkId !== 0 ? (
             <Link
-              to={`/dm-portfolio/proj/${prevLinkId}`}
+              to={`/proj/${prevLinkId}`}
               onClick={() => {
                 setDirection(slideLeft);
               }}>
@@ -81,7 +81,7 @@ const Project = ({ match: { params } }) => {
           )}
           {nextLinkId !== lastProject ? (
             <Link
-              to={`/dm-portfolio/proj/${nextLinkId}`}
+              to={`/proj/${nextLinkId}`}
               onClick={() => {
                 setDirection(slideRight);
               }}>

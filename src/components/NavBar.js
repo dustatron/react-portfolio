@@ -21,14 +21,14 @@ const NavBar = () => {
           <NavLink
             smooth
             activeClassName={
-              `${location.pathname}${location.hash}` === 'dm-portfolio#top' ||
-              `${location.pathname}${location.hash}` === 'dm-portfolio'
+              `${location.pathname}${location.hash}` === '#top' ||
+              `${location.pathname}${location.hash}` === ''
                 ? 'selected'
                 : ''
             }
             className={`navbar-list-item`}
             exact
-            to={'/dm-portfolio#top'}>
+            to={'/#top'}>
             <div className='navbar-list-item-img'>
               <img src={home} alt='home' />
             </div>
@@ -39,12 +39,12 @@ const NavBar = () => {
           <NavLink
             smooth
             activeClassName={
-              `${location.pathname}${location.hash}` === 'dm-portfolio#about'
+              `${location.pathname}${location.hash}` === '#about'
                 ? 'selected'
                 : ''
             }
             className='navbar-list-item'
-            to={'/dm-portfolio#about'}>
+            to={'/#about'}>
             <div className='navbar-list-item-img'>
               <img src={rocket} alt='about' />
             </div>
@@ -55,12 +55,12 @@ const NavBar = () => {
           <NavLink
             smooth
             activeClassName={
-              `${location.pathname}${location.hash}` === 'dm-portfolio#projects'
+              `${location.pathname}${location.hash}` === '#projects'
                 ? 'selected'
                 : ''
             }
             className='navbar-list-item'
-            to={'/dm-portfolio#projects'}>
+            to={'/#projects'}>
             <div className='navbar-list-item-img'>
               <img src={projects} alt='projects' />
             </div>
@@ -72,12 +72,12 @@ const NavBar = () => {
           <NavLink
             smooth
             activeClassName={
-              `${location.pathname}${location.hash}` === 'dm-portfolio#contact'
+              `${location.pathname}${location.hash}` === '#contact'
                 ? 'selected'
                 : ''
             }
             className='navbar-list-item'
-            to={'/dm-portfolio#contact'}>
+            to={'/#contact'}>
             <div className='navbar-list-item-img'>
               <img src={mail} alt='home' />
             </div>
