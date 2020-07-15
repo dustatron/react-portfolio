@@ -7,7 +7,7 @@ import { useTransition, animated } from 'react-spring';
 import prevArrow from '../media/icons/arrowleft.svg';
 import nextArrow from '../media/icons/arrowright.svg';
 
-const Project = ({ match: { params } }) => {
+const Project = ({}) => {
   const slideRight = {
     from: { opacity: 0, marginLeft: -200, marginRight: 200 },
     enter: { opacity: 1, marginLeft: 0, marginRight: 0 },
@@ -35,10 +35,10 @@ const Project = ({ match: { params } }) => {
   });
   useEffect(() => {
     const data = ProjectData.find((pro) => {
-      return pro.id === parseInt(params.id);
+      return pro.id === parseInt(1);
     });
     setProject(data ? data : project);
-  }, [params, project]);
+  }, [project]);
 
   const transition = useTransition(project, (project) => project.id, direction); // returns array, (item, item key, styling)
 

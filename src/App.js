@@ -19,6 +19,7 @@ function App() {
             <Route exact path={`/home`} component={Home} />
             <Route path='/' component={Home} />
           </Switch>
+          <Project />
         </div>
         <div className='grid-container-right'></div>
       </div>
