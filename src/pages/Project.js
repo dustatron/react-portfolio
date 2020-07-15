@@ -56,7 +56,7 @@ const Project = ({ updateView, currentProj }) => {
     hurdlesDetails,
     activeLink,
     gitHubLink,
-    // secImg,
+    secImg,
   } = project; // Deconstruct
 
   return (
@@ -166,7 +166,7 @@ const Project = ({ updateView, currentProj }) => {
         <div className='project-details-left'>
           {img && (
             <img
-              src={require(`../media/screenshots/blazers02.png`)}
+              src={require(`../media/screenshots/${secImg}`)}
               alt='screen shot'
             />
           )}

@@ -5,7 +5,7 @@ const ProjectData = [
     tech: 'React',
     img: 'blazers.png',
     lgImg: '',
-    secImg: 'blazers-02.png',
+    secImg: 'blazersFull.png',
     basicTitle: 'Basic Title',
     basicDetails:
       'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry',
@@ -22,7 +22,7 @@ const ProjectData = [
     tech: 'React',
     img: 've.png',
     lgImg: '',
-    secImg: 'blazers-02.png',
+    secImg: 'veFull.png',
     basicTitle: 'Basic Title',
     basicDetails:
       'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry',
@@ -46,7 +46,7 @@ const ProjectData = [
     tech: 'Rails',
     img: 'pfv.png',
     lgImg: '',
-    secImg: 'blazers-02.png',
+    secImg: 'blazers02.png',
     basicTitle: 'Basic Title',
     basicDetails:
       'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry',
@@ -64,7 +64,7 @@ const ProjectData = [
     tech: 'JavaScript',
     img: 'karaoke.png',
     lgImg: '',
-    secImg: 'blazers-02.png',
+    secImg: 'karaokeFull.png',
     basicTitle: 'Basic Title',
     basicDetails:
       'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry',
@@ -81,7 +81,7 @@ const ProjectData = [
     tech: 'C# ASP.NET',
     img: 'ts.png',
     lgImg: '',
-    secImg: 'blazers-02.png',
+    secImg: 'blazers02.png',
     basicTitle: 'Basic Title',
     basicDetails:
       'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry',
@@ -106,7 +106,7 @@ const ProjectData = [
     tech: 'MERN',
     img: 'dev-connect.png',
     lgImg: '',
-    secImg: 'blazers-02.png',
+    secImg: 'blazers02.png',
     basicTitle: 'Dev Connect',
     basicDetails:
       'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry',
@@ -131,7 +131,7 @@ const ProjectData = [
     tech: 'C#',
     img: 'dev-connect.png',
     lgImg: '',
-    secImg: 'blazers-02.png',
+    secImg: 'blazers02.png',
     basicTitle: 'Dev Connect',
     basicDetails:
       'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry',
