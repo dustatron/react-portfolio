@@ -1,5 +1,5 @@
 import React, { Fragment } from 'react';
-import { Switch, Route } from 'react-router-dom';
+import { Switch, Route, useRouteMatch } from 'react-router-dom';
 
 // Components
 import Home from './pages/Home';
@@ -7,6 +7,7 @@ import NavBar from './components/NavBar';
 import Project from './pages/Project';
 
 function App() {
+  const match = useRouteMatch();
   return (
     <Fragment>
       <div className='grid-container'>
@@ -15,8 +16,8 @@ function App() {
         </div>
         <div className='grid-container-center'>
           <Switch>
-            <Route path='/proj/:id' component={Project} />
-            <Route exact path='/home' component={Home} />
+            <Route path={`/dm-portfolio/proj/:id`} component={Project} />
+            <Route exact path={`/dm-portfolio`} component={Home} />
             <Route path='/' component={Home} />
           </Switch>
         </div>
