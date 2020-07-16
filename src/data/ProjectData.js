@@ -88,7 +88,14 @@ const ProjectData = [
     hurdlesTitle: 'Hurdles',
     hurdlesDetails: `This site was written in Vanilla JavaScript using Node and Webpack. The largest Hurdle was juggling the state of a selected playlist between searching for songs to add to the playlist, playing the playlist movies, and switching between playlists. 
                      The trick we used at the time was passing parameters into the url and forcing a page reload so that the site could grab the parameters on load and change what it showed the user. `,
-    techList: ['Bootstrap', 'JavaScript', 'RESTful API', 'Node.js', 'NoSql'],
+    techList: [
+      'Bootstrap',
+      'JavaScript',
+      'RESTful API',
+      'Node.js',
+      'NoSql',
+      'Firebase',
+    ],
     activeLink: 'https://karaoke-team.web.app/',
     gitHubLink: 'https://github.com/dustatron/karaoke-team',
   },
