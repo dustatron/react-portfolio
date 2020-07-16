@@ -21,7 +21,7 @@ const ProjectList = ({ handleViewChange }) => {
     });
 
     if (value === 'show all') {
-      return setProjectList(initialState);
+      setProjectList(initialState);
     } else {
       setProjectList(newList);
     }
