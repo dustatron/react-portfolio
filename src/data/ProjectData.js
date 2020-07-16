@@ -19,8 +19,8 @@ const ProjectData = [
       'Sass',
       'Front-End',
     ],
-    activeLink: '',
-    gitHubLink: '',
+    activeLink: 'https://dustatron.github.io/trail-blazer-mockup/',
+    gitHubLink: 'https://github.com/dustatron/trail-blazer-mockup',
   },
   {
     id: 2,
