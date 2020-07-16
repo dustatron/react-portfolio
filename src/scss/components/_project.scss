@@ -2,7 +2,9 @@
   // position: absolute;
   width: 934px;
   min-height: 100vh;
+  margin-bottom: 10rem;
   @include respond(tab-land) {
+    margin: auto;
     width: 100%;
     position: relative;
   }
@@ -77,13 +79,13 @@
     }
   }
   &-tech {
-    margin: 270px auto 0 auto;
+    margin: 29rem auto 0 auto;
     max-width: 500px;
     @include respond(tab-land) {
-      margin: 33rem auto 0 auto;
+      margin: 34rem auto 0 auto;
     }
     @include respond(tab-port) {
-      margin: 15rem auto 0 auto;
+      margin: 18rem auto 0 auto;
     }
     // @include respond(phone) {
     //   margin: 15rem auto 0 auto;
