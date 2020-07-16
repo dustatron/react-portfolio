@@ -11,7 +11,6 @@ const ProjectList = ({ handleViewChange }) => {
   const initialState = ProjectData.slice(0, 6);
   const [selected, setSelected] = useState(0);
   const [projectList, setProjectList] = useState(initialState);
-  const [showMore, setShowMore] = useState(false);
 
   const updateSelected = (index, value) => {
     const newList = ProjectData.filter((project) => {
