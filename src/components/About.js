@@ -21,10 +21,10 @@ const About = () => {
               </div>
               <div className='about-bottom-bullets-copy'>
                 I am a web developer who also spent a decade in video production
-                as an editor and animator. My hobby has always been learning new
-                skills and building things. Over the last couple of years I have
-                been making and maintaining websites for friends and
-                organisations that help build community and push my
+                as an editor and animator. My hobbies have always included
+                learning new skills and building things. Over the last few
+                years, I have been making and maintaining websites for friends
+                and organizations that help build community while pushing my
                 understanding of software development. At the end of 2019 I
                 decided to pursue web development full time.
               </div>
@@ -40,19 +40,6 @@ const About = () => {
                 interactive user interfaces that function and look pretty.
               </div>
             </li>
-            {/* <li>
-              <div className='about-bottom-bullets-img'>
-                <img src={webpage} alt='video camera' />
-              </div>
-              <div className='about-bottom-bullets-copy'>
-                I spent over 10 years in video and film production. I started as
-                an intern cleaning toilets and getting people coffee and worked
-                my way on to film sets on large films and commercials. I
-                followed my passions and tought myself video editing and
-                animation and convicened people to trust me enough to edit their
-                projects.
-              </div>
-            </li> */}
           </ul>
         </div>
       </div>
